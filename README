@@ -1,0 +1,31 @@
+Author:
+=======
+	Pranav Gupta
+	Department of Computer Science and Engineering
+	Indian Institute of Technology Guwahati
+	
+Description:
+============
+The project consists of implementations of two classifiers:
+	1. Naive Bayes
+	2. Full Bayes
+
+The implementations are for simple requirements and have been written in Octave.
+
+Requirements:
+=============
+To use any of the model:
+	1. The model works only for single-label 2-class classification.
+	2. The training data must be provided in the form of a matrix in a csv file. The rows of the matrix represent the data items and the columns represent the feature values. The last feature/columns represents the class label.
+	3. The name of this file containing the labelled data should be explicilty changed in the .m file for either of the models.
+	4. All feature values should be numerical.
+	5. The class labels(last column) should be either a 0 or a 1.
+
+Working:
+========
+	1. The naive bayes model discretizes the feature values into two categories:
+		a. if the feature = 0 : category 1
+		b. if the feature > 0 : category 2
+	
+	2. The full bayes model assumes normal (gaussian) distribution of all features.
+	3. Both models assume independence of all the features.
